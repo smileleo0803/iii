@@ -1,7 +1,6 @@
 ##找台股現存自然人、近一年有實動、有庫存
 
-library("RODBC")
-myconn <-odbcConnect("101", uid="TW\0010173", pwd="love7283") 
+
 #一年內實動的現存自然人
 cus <- sqlQuery(myconn, "select CUS010,CUS020,CUS030,CUS040,CUS050,CUS080,CUS090,CUS150,CUS250,CUS320,
                 CUS570,NBHNO_,NDEPT_
